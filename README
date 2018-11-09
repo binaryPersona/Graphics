@@ -1,0 +1,12 @@
+Program by Zoe Wolfe
+Made for CS430 class at Drexel University
+
+This program draws lines in a 500x500 pixel format.  It is capable of clippng lines that go past this rectangle, and it will export the image in the .XMP format.  Please note that this program does not contain an XMP viewer, but will instead just export the file to be viewed.
+
+In order to use this program, you must first run the Makefile contained in this folder.  Upon doing that, there should be an executable file in the folder named main.  The CS430.cpp file contains the main function, but upon running the Makefile, the main executable is the file to run and use.  
+
+In order to run the program, you must pass it a postscript file to read.  This must be passed to the program using -f filename.  So if the postscript file is named example.ps, you would run the program using ./main -f example.  The file should have the extension .ps, but the .ps should not be included when passing the file to the program. The program will exit if the file could not be found, and no XMP file will be output. 
+
+For the sake of this program, the postfile should start with the delimter %%%BEGIN and end with %%%END.  Anything outside of these delimeters will be ignored.  All lines should then be passed in between these delimiters in the format "x1 yq x2 y2" without the quotations, and all on one line.
+
+This program was coded in C++ using Microsoft Visual Studio on a Windows 10 computer.
